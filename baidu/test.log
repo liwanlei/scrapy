@@ -1,0 +1,1567 @@
+2017-09-17 16:10:53 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: baidu)
+2017-09-17 16:10:53 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'baidu', 'CONCURRENT_REQUESTS': 32, 'FEED_FORMAT': 'csv', 'FEED_URI': 'douban_movie_top250.csv', 'LOG_FILE': 'test.log', 'NEWSPIDER_MODULE': 'baidu.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['baidu.spiders']}
+2017-09-17 16:10:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-17 16:10:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-17 16:10:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-17 16:10:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-09-17 16:10:53 [scrapy.core.engine] INFO: Spider opened
+2017-09-17 16:10:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-17 16:10:53 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-17 16:10:54 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://movie.douban.com/robots.txt> (referer: None)
+2017-09-17 16:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250> (referer: None)
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '希望让人自由。',
+ 'daoyan': '\n'
+           '                            导演: 弗兰克·德拉邦特 Frank Darabont\xa0\xa0\xa0'
+           '主演: 蒂姆·罗宾斯 Tim Robbins /...',
+ 'movie_name': '肖申克的救赎',
+ 'ranking': '1',
+ 'score': '9.6',
+ 'score_num': '877331',
+ 'url': 'https://movie.douban.com/subject/1292052/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '风华绝代。',
+ 'daoyan': '\n'
+           '                            导演: 陈凯歌 Kaige Chen\xa0\xa0\xa0主演: 张国荣 '
+           'Leslie Cheung / 张丰毅 Fengyi Zha...',
+ 'movie_name': '霸王别姬',
+ 'ranking': '2',
+ 'score': '9.5',
+ 'score_num': '631007',
+ 'url': 'https://movie.douban.com/subject/1291546/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '怪蜀黍和小萝莉不得不说的故事。',
+ 'daoyan': '\n'
+           '                            导演: 吕克·贝松 Luc Besson\xa0\xa0\xa0主演: '
+           '让·雷诺 Jean Reno / 娜塔莉·波特曼 ...',
+ 'movie_name': '这个杀手不太冷',
+ 'ranking': '3',
+ 'score': '9.4',
+ 'score_num': '838491',
+ 'url': 'https://movie.douban.com/subject/1295644/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '一部美国近现代史。',
+ 'daoyan': '\n'
+           '                            导演: Robert Zemeckis\xa0\xa0\xa0主演: Tom '
+           'Hanks / Robin Wright Penn / Gary Sinise',
+ 'movie_name': '阿甘正传',
+ 'ranking': '4',
+ 'score': '9.4',
+ 'score_num': '714763',
+ 'url': 'https://movie.douban.com/subject/1292720/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '最美的谎言。',
+ 'daoyan': '\n'
+           '                            导演: 罗伯托·贝尼尼 Roberto Benigni\xa0\xa0\xa0'
+           '主演: 罗伯托·贝尼尼 Roberto Beni...',
+ 'movie_name': '美丽人生',
+ 'ranking': '5',
+ 'score': '9.5',
+ 'score_num': '416985',
+ 'url': 'https://movie.douban.com/subject/1292063/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '最好的宫崎骏，最好的久石让。 ',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '柊瑠美 Rumi Hîragi / 入野自由 Miy...',
+ 'movie_name': '千与千寻',
+ 'ranking': '6',
+ 'score': '9.2',
+ 'score_num': '665882',
+ 'url': 'https://movie.douban.com/subject/1291561/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '拯救一个人，就是拯救整个世界。',
+ 'daoyan': '\n'
+           '                            导演: 史蒂文·斯皮尔伯格 Steven '
+           'Spielberg\xa0\xa0\xa0主演: 连姆·尼森 Liam Neeson...',
+ 'movie_name': '辛德勒的名单',
+ 'ranking': '7',
+ 'score': '9.4',
+ 'score_num': '384442',
+ 'url': 'https://movie.douban.com/subject/1295124/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '失去的才是永恒的。 ',
+ 'daoyan': '\n'
+           '                            导演: 詹姆斯·卡梅隆 James Cameron\xa0\xa0\xa0'
+           '主演: 莱昂纳多·迪卡普里奥 Leonardo...',
+ 'movie_name': '泰坦尼克号',
+ 'ranking': '8',
+ 'score': '9.2',
+ 'score_num': '657017',
+ 'url': 'https://movie.douban.com/subject/1292722/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '诺兰给了我们一场无法盗取的梦。',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托弗·诺兰 Christopher '
+           'Nolan\xa0\xa0\xa0主演: 莱昂纳多·迪卡普里奥 Le...',
+ 'movie_name': '盗梦空间',
+ 'ranking': '9',
+ 'score': '9.2',
+ 'score_num': '766476',
+ 'url': 'https://movie.douban.com/subject/3541415/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '小瓦力，大人生。',
+ 'daoyan': '\n'
+           '                            导演: 安德鲁·斯坦顿 Andrew Stanton\xa0\xa0\xa0'
+           '主演: 本·贝尔特 Ben Burtt / 艾丽...',
+ 'movie_name': '机器人总动员',
+ 'ranking': '10',
+ 'score': '9.3',
+ 'score_num': '500920',
+ 'url': 'https://movie.douban.com/subject/2131459/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '每个人都要走一条自己坚定了的路，就算是粉身碎骨。 ',
+ 'daoyan': '\n'
+           '                            导演: 朱塞佩·托纳多雷 Giuseppe '
+           'Tornatore\xa0\xa0\xa0主演: 蒂姆·罗斯 Tim Roth / ...',
+ 'movie_name': '海上钢琴师',
+ 'ranking': '11',
+ 'score': '9.2',
+ 'score_num': '601407',
+ 'url': 'https://movie.douban.com/subject/1292001/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '英俊版憨豆，高情商版谢耳朵。',
+ 'daoyan': '\n'
+           '                            导演: 拉库马·希拉尼 Rajkumar Hirani\xa0\xa0\xa0'
+           '主演: 阿米尔·汗 Aamir Khan / 卡...',
+ 'movie_name': '三傻大闹宝莱坞',
+ 'ranking': '12',
+ 'score': '9.1',
+ 'score_num': '676734',
+ 'url': 'https://movie.douban.com/subject/3793023/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '永远都不能忘记你所爱的人。',
+ 'daoyan': '\n'
+           '                            导演: 莱塞·霍尔斯道姆 Lasse '
+           'Hallström\xa0\xa0\xa0主演: 理查·基尔 Richard Ger...',
+ 'movie_name': '忠犬八公的故事',
+ 'ranking': '13',
+ 'score': '9.2',
+ 'score_num': '457673',
+ 'url': 'https://movie.douban.com/subject/3011091/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '天籁一般的童声，是最接近上帝的存在。 ',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托夫·巴拉蒂 Christophe '
+           'Barratier\xa0\xa0\xa0主演: 杰拉尔·朱诺 Géra...',
+ 'movie_name': '放牛班的春天',
+ 'ranking': '14',
+ 'score': '9.2',
+ 'score_num': '454497',
+ 'url': 'https://movie.douban.com/subject/1291549/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '一生所爱。',
+ 'daoyan': '\n'
+           '                            导演: 刘镇伟 Jeffrey Lau\xa0\xa0\xa0主演: 周星驰 '
+           'Stephen Chow / 吴孟达 Man Tat Ng...',
+ 'movie_name': '大话西游之大圣娶亲',
+ 'ranking': '15',
+ 'score': '9.2',
+ 'score_num': '490495',
+ 'url': 'https://movie.douban.com/subject/1292213/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '人人心中都有个龙猫，童年就永远不会消失。',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '日高法子 Noriko Hidaka / 坂本千夏 Ch...',
+ 'movie_name': '龙猫',
+ 'ranking': '16',
+ 'score': '9.1',
+ 'score_num': '420282',
+ 'url': 'https://movie.douban.com/subject/1291560/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '千万不要记恨你的对手，这样会让你失去理智。',
+ 'daoyan': '\n'
+           '                            导演: 弗朗西斯·福特·科波拉 Francis Ford '
+           'Coppola\xa0\xa0\xa0主演: 马龙·白兰度 M...',
+ 'movie_name': '教父',
+ 'ranking': '17',
+ 'score': '9.2',
+ 'score_num': '345074',
+ 'url': 'https://movie.douban.com/subject/1291841/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '如果再也不能见到你，祝你早安，午安，晚安。',
+ 'daoyan': '\n'
+           '                            导演: 彼得·威尔 Peter Weir\xa0\xa0\xa0主演: '
+           '金·凯瑞 Jim Carrey / 劳拉·琳妮 Lau...',
+ 'movie_name': '楚门的世界',
+ 'ranking': '18',
+ 'score': '9.1',
+ 'score_num': '456905',
+ 'url': 'https://movie.douban.com/subject/1292064/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': 'Tomorrow is another day.',
+ 'daoyan': '\n'
+           '                            导演: 维克多·弗莱明 Victor Fleming / 乔治·库克 '
+           'George Cukor\xa0\xa0\xa0主演: 托...',
+ 'movie_name': '乱世佳人',
+ 'ranking': '19',
+ 'score': '9.2',
+ 'score_num': '272307',
+ 'url': 'https://movie.douban.com/subject/1300267/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '那些吻戏，那些青春，都在影院的黑暗里被泪水冲刷得无比清晰。',
+ 'daoyan': '\n'
+           '                            导演: 朱塞佩·托纳多雷 Giuseppe '
+           'Tornatore\xa0\xa0\xa0主演: 安东娜拉·塔莉 Antonel...',
+ 'movie_name': '天堂电影院',
+ 'ranking': '20',
+ 'score': '9.1',
+ 'score_num': '310664',
+ 'url': 'https://movie.douban.com/subject/1291828/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '满满温情的高雅喜剧。',
+ 'daoyan': '\n'
+           '                            导演: 奥利维·那卡什 Olivier Nakache / 艾力克·托兰达 '
+           'Eric Toledano\xa0\xa0\xa0主...',
+ 'movie_name': '触不可及',
+ 'ranking': '21',
+ 'score': '9.1',
+ 'score_num': '367431',
+ 'url': 'https://movie.douban.com/subject/6786002/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '平民励志片。 ',
+ 'daoyan': '\n'
+           '                            导演: 加布里尔·穆奇诺 Gabriele '
+           'Muccino\xa0\xa0\xa0主演: 威尔·史密斯 Will Smith ...',
+ 'movie_name': '当幸福来敲门',
+ 'ranking': '22',
+ 'score': '8.9',
+ 'score_num': '540658',
+ 'url': 'https://movie.douban.com/subject/1849031/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '我们一路奋战不是为了改变世界，而是为了不让世界改变我们。',
+ 'daoyan': '\n'
+           '                            导演: 黄东赫 Dong-hyuk Hwang\xa0\xa0\xa0主演: '
+           '孔侑 Yoo Gong / 郑有美 Yu-mi Jeong ...',
+ 'movie_name': '熔炉',
+ 'ranking': '23',
+ 'score': '9.2',
+ 'score_num': '253580',
+ 'url': 'https://movie.douban.com/subject/5912992/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '香港电影史上永不过时的杰作。',
+ 'daoyan': '\n'
+           '                            导演: 刘伟强 / 麦兆辉\xa0\xa0\xa0主演: 刘德华 / 梁朝伟 '
+           '/ 黄秋生',
+ 'movie_name': '无间道',
+ 'ranking': '24',
+ 'score': '9.0',
+ 'score_num': '400697',
+ 'url': 'https://movie.douban.com/subject/1307914/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'bieming': '邪恶与平庸蛰伏于同一个母体，在特定的时间互相对峙。',
+ 'daoyan': '\n'
+           '                            导演: 大卫·芬奇 David Fincher\xa0\xa0\xa0主演: '
+           '爱德华·诺顿 Edward Norton / 布拉...',
+ 'movie_name': '搏击俱乐部',
+ 'ranking': '25',
+ 'score': '9.0',
+ 'score_num': '405319',
+ 'url': 'https://movie.douban.com/subject/1292000/'}
+2017-09-17 16:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=25&filter=> (referer: https://movie.douban.com/top250)
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '1957年的理想主义。 ',
+ 'daoyan': '\n'
+           '                            导演: Sidney Lumet\xa0\xa0\xa0主演: 亨利·方达 '
+           'Henry Fonda / 马丁·鲍尔萨姆 Marti...',
+ 'movie_name': '十二怒汉',
+ 'ranking': '26',
+ 'score': '9.4',
+ 'score_num': '171837',
+ 'url': 'https://movie.douban.com/subject/1293182/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '真正的幸福是来自内心深处。',
+ 'daoyan': '\n'
+           '                            导演: 罗伯·莱纳 Rob Reiner\xa0\xa0\xa0主演: '
+           '玛德琳·卡罗尔 Madeline Carroll / 卡...',
+ 'movie_name': '怦然心动',
+ 'ranking': '27',
+ 'score': '8.9',
+ 'score_num': '548175',
+ 'url': 'https://movie.douban.com/subject/3319755/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '史诗的终章。',
+ 'daoyan': '\n'
+           '                            导演: 彼得·杰克逊 Peter Jackson\xa0\xa0\xa0'
+           '主演: 维果·莫腾森 Viggo Mortensen / ...',
+ 'movie_name': '指环王3：王者无敌',
+ 'ranking': '28',
+ 'score': '9.1',
+ 'score_num': '285440',
+ 'url': 'https://movie.douban.com/subject/1291552/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '爱是一种力量，让我们超越时空感知它的存在。',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托弗·诺兰 Christopher '
+           'Nolan\xa0\xa0\xa0主演: 马修·麦康纳 Matthew Mc...',
+ 'movie_name': '星际穿越',
+ 'ranking': '29',
+ 'score': '9.1',
+ 'score_num': '485587',
+ 'url': 'https://movie.douban.com/subject/1889243/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '瑰丽壮观、无人能及的冒险之旅。',
+ 'daoyan': '\n'
+           '                            导演: 李安 Ang Lee\xa0\xa0\xa0主演: 苏拉·沙玛 '
+           'Suraj Sharma / 拉菲·斯波 Rafe Spa...',
+ 'movie_name': '少年派的奇幻漂流',
+ 'ranking': '30',
+ 'score': '9.0',
+ 'score_num': '579934',
+ 'url': 'https://movie.douban.com/subject/1929463/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '对天空的追逐，永不停止。 ',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '田中真弓 Mayumi Tanaka / 横泽启子 Ke...',
+ 'movie_name': '天空之城',
+ 'ranking': '31',
+ 'score': '9.0',
+ 'score_num': '333085',
+ 'url': 'https://movie.douban.com/subject/1291583/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '对敌人的仁慈，就是对自己残忍。',
+ 'daoyan': '\n'
+           '                            导演: 姜文 Wen Jiang\xa0\xa0\xa0主演: 姜文 Wen '
+           'Jiang / 香川照之 Teruyuki Kagawa /...',
+ 'movie_name': '鬼子来了',
+ 'ranking': '32',
+ 'score': '9.2',
+ 'score_num': '228591',
+ 'url': 'https://movie.douban.com/subject/1291858/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '爱情哪怕只有一天。',
+ 'daoyan': '\n'
+           '                            导演: 威廉·惠勒 William Wyler\xa0\xa0\xa0主演: '
+           '奥黛丽·赫本 Audrey Hepburn / 格...',
+ 'movie_name': '罗马假日',
+ 'ranking': '33',
+ 'score': '8.9',
+ 'score_num': '386238',
+ 'url': 'https://movie.douban.com/subject/1293839/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '无尽的黑暗。',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托弗·诺兰 Christopher '
+           'Nolan\xa0\xa0\xa0主演: 克里斯蒂安·贝尔 Christ...',
+ 'movie_name': '蝙蝠侠：黑暗骑士',
+ 'ranking': '34',
+ 'score': '9.0',
+ 'score_num': '320545',
+ 'url': 'https://movie.douban.com/subject/1851857/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '旷古烁今。',
+ 'daoyan': '\n'
+           '                            导演: 刘镇伟 Jeffrey Lau\xa0\xa0\xa0主演: 周星驰 '
+           'Stephen Chow / 吴孟达 Man Tat Ng...',
+ 'movie_name': '大话西游之月光宝盒',
+ 'ranking': '35',
+ 'score': '8.9',
+ 'score_num': '396557',
+ 'url': 'https://movie.douban.com/subject/1299398/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '张艺谋最好的电影。',
+ 'daoyan': '\n'
+           '                            导演: 张艺谋 Yimou Zhang\xa0\xa0\xa0主演: 葛优 '
+           'You Ge / 巩俐 Li Gong / 姜武 Wu Jiang',
+ 'movie_name': '活着',
+ 'ranking': '36',
+ 'score': '9.1',
+ 'score_num': '266500',
+ 'url': 'https://movie.douban.com/subject/1292365/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '4个臭皮匠顶个诸葛亮，盖·里奇果然不是盖的。',
+ 'daoyan': '\n'
+           '                            导演: Guy Ritchie\xa0\xa0\xa0主演: Jason '
+           'Flemyng / Dexter Fletcher / Nick Moran',
+ 'movie_name': '两杆大烟枪',
+ 'ranking': '37',
+ 'score': '9.0',
+ 'score_num': '273478',
+ 'url': 'https://movie.douban.com/subject/1293350/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '最后那些最无聊的事情，才是最值得怀念的。 ',
+ 'daoyan': '\n'
+           '                            导演: 彼特·道格特 Pete Docter\xa0\xa0\xa0主演: '
+           '爱德华·阿斯纳 Edward Asner / 克...',
+ 'movie_name': '飞屋环游记',
+ 'ranking': '38',
+ 'score': '8.9',
+ 'score_num': '497784',
+ 'url': 'https://movie.douban.com/subject/2129039/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '别样人生。',
+ 'daoyan': '\n'
+           '                            导演: 弗洛里安·亨克尔·冯·多纳斯马 Florian Henckel '
+           'von Donnersmarck\xa0\xa0\xa0...',
+ 'movie_name': '窃听风暴',
+ 'ranking': '39',
+ 'score': '9.1',
+ 'score_num': '222260',
+ 'url': 'https://movie.douban.com/subject/1900841/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '自由万岁。',
+ 'daoyan': '\n'
+           '                            导演: 米洛斯·福尔曼 Miloš Forman\xa0\xa0\xa0'
+           '主演: 杰克·尼科尔森 Jack Nichols...',
+ 'movie_name': '飞越疯人院',
+ 'ranking': '40',
+ 'score': '9.0',
+ 'score_num': '277324',
+ 'url': 'https://movie.douban.com/subject/1292224/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '海豚的微笑，是世界上最高明的伪装。',
+ 'daoyan': '\n'
+           '                            导演: Louie Psihoyos\xa0\xa0\xa0主演: John '
+           'Chisholm / Mandy-Rae Cruikshank / Char...',
+ 'movie_name': '海豚湾',
+ 'ranking': '41',
+ 'score': '9.3',
+ 'score_num': '181497',
+ 'url': 'https://movie.douban.com/subject/3442220/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '史上最美的探戈。',
+ 'daoyan': '\n'
+           '                            导演: 马丁·布莱斯 Martin Brest\xa0\xa0\xa0主演: '
+           '阿尔·帕西诺 Al Pacino / 克里斯...',
+ 'movie_name': '闻香识女人',
+ 'ranking': '42',
+ 'score': '8.9',
+ 'score_num': '320594',
+ 'url': 'https://movie.douban.com/subject/1298624/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '一张面具背后的理想与革命。',
+ 'daoyan': '\n'
+           '                            导演: 詹姆斯·麦克特格 James McTeigue\xa0\xa0\xa0'
+           '主演: 娜塔莉·波特曼 Natalie Por...',
+ 'movie_name': 'V字仇杀队',
+ 'ranking': '43',
+ 'score': '8.8',
+ 'score_num': '414009',
+ 'url': 'https://movie.douban.com/subject/1309046/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '带着心爱的人在天空飞翔。',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '倍赏千惠子 Chieko Baishô / 木村拓...',
+ 'movie_name': '哈尔的移动城堡',
+ 'ranking': '44',
+ 'score': '8.9',
+ 'score_num': '347033',
+ 'url': 'https://movie.douban.com/subject/1308807/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '优雅的孤独。',
+ 'daoyan': '\n'
+           '                            导演: 弗朗西斯·福特·科波拉 Francis Ford '
+           'Coppola\xa0\xa0\xa0主演: 阿尔·帕西诺 A...',
+ 'movie_name': '教父2',
+ 'ranking': '45',
+ 'score': '9.1',
+ 'score_num': '185797',
+ 'url': 'https://movie.douban.com/subject/1299131/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '爱是一切逻辑和原由。',
+ 'daoyan': '\n'
+           '                            导演: 朗·霍华德 Ron Howard\xa0\xa0\xa0主演: '
+           '罗素·克劳 Russell Crowe / 詹妮弗·...',
+ 'movie_name': '美丽心灵',
+ 'ranking': '46',
+ 'score': '8.9',
+ 'score_num': '303398',
+ 'url': 'https://movie.douban.com/subject/1306029/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '承前启后的史诗篇章。',
+ 'daoyan': '\n'
+           '                            导演: 彼得·杰克逊 Peter Jackson\xa0\xa0\xa0'
+           '主演: 伊利亚·伍德 Elijah Wood / 西恩...',
+ 'movie_name': '指环王2：双塔奇兵',
+ 'ranking': '47',
+ 'score': '8.9',
+ 'score_num': '269323',
+ 'url': 'https://movie.douban.com/subject/1291572/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '传说的开始。',
+ 'daoyan': '\n'
+           '                            导演: 彼得·杰克逊 Peter Jackson\xa0\xa0\xa0'
+           '主演: 伊利亚·伍德 Elijah Wood / 西恩...',
+ 'movie_name': '指环王1：魔戒再现',
+ 'ranking': '48',
+ 'score': '8.9',
+ 'score_num': '300883',
+ 'url': 'https://movie.douban.com/subject/1291571/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '当一个死水般的体制内出现一个活跃的变数时，所有的腐臭都站在了光明的对面。',
+ 'daoyan': '\n'
+           '                            导演: 彼得·威尔 Peter Weir\xa0\xa0\xa0主演: '
+           '罗宾·威廉姆斯 Robin Williams / 罗伯...',
+ 'movie_name': '死亡诗社',
+ 'ranking': '49',
+ 'score': '8.9',
+ 'score_num': '275530',
+ 'url': 'https://movie.douban.com/subject/1291548/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=25&filter=>
+{'bieming': '暗恋的极致。',
+ 'daoyan': '\n'
+           '                            导演: 岩井俊二 Shunji Iwai\xa0\xa0\xa0主演: '
+           '中山美穗 Miho Nakayama / 丰川悦司 Ets...',
+ 'movie_name': '情书',
+ 'ranking': '50',
+ 'score': '8.8',
+ 'score_num': '371929',
+ 'url': 'https://movie.douban.com/subject/1292220/'}
+2017-09-17 16:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=50&filter=> (referer: https://movie.douban.com/top250?start=25&filter=)
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '比利·怀德满分作品。',
+ 'daoyan': '\n'
+           '                            导演: 比利·怀尔德 Billy Wilder\xa0\xa0\xa0主演: '
+           '查尔斯·劳顿 Charles Laughton / ...',
+ 'movie_name': '控方证人',
+ 'ranking': '51',
+ 'score': '9.6',
+ 'score_num': '85047',
+ 'url': 'https://movie.douban.com/subject/1296141/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '法式小清新。 ',
+ 'daoyan': '\n'
+           '                            导演: 让-皮埃尔·热内 Jean-Pierre '
+           'Jeunet\xa0\xa0\xa0主演: 奥黛丽·塔图 Audrey Tau...',
+ 'movie_name': '天使爱美丽',
+ 'ranking': '52',
+ 'score': '8.7',
+ 'score_num': '479332',
+ 'url': 'https://movie.douban.com/subject/1292215/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '往事如烟，无处祭奠。',
+ 'daoyan': '\n'
+           '                            导演: 赛尔乔·莱翁内 Sergio Leone\xa0\xa0\xa0'
+           '主演: 罗伯特·德尼罗 Robert De Niro ...',
+ 'movie_name': '美国往事',
+ 'ranking': '53',
+ 'score': '9.1',
+ 'score_num': '173187',
+ 'url': 'https://movie.douban.com/subject/1292262/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '电影的现实意义大过电影本身。',
+ 'daoyan': '\n'
+           '                            导演: 杨宇硕 Woo-seok Yang\xa0\xa0\xa0主演: '
+           '宋康昊 Kang-ho Song / 吴达洙 Dal-su O...',
+ 'movie_name': '辩护人',
+ 'ranking': '54',
+ 'score': '9.1',
+ 'score_num': '198330',
+ 'url': 'https://movie.douban.com/subject/21937445/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '音乐能化解仇恨。',
+ 'daoyan': '\n'
+           '                            导演: 罗曼·波兰斯基 Roman Polanski\xa0\xa0\xa0'
+           '主演: 艾德里安·布洛迪 Adrien Brod...',
+ 'movie_name': '钢琴家',
+ 'ranking': '55',
+ 'score': '9.0',
+ 'score_num': '201356',
+ 'url': 'https://movie.douban.com/subject/1296736/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '人生不能像做菜，把所有的料都准备好了才下锅。',
+ 'daoyan': '\n'
+           '                            导演: 李安 Ang Lee\xa0\xa0\xa0主演: 吴倩莲 '
+           'Chien-lien Wu / 杨贵媚 Kuei-Mei Yang /...',
+ 'movie_name': '饮食男女',
+ 'ranking': '56',
+ 'score': '9.0',
+ 'score_num': '193856',
+ 'url': 'https://movie.douban.com/subject/1291818/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '警察抓小偷，老鼠玩死猫。',
+ 'daoyan': '\n'
+           '                            导演: 大卫·芬奇 David Fincher\xa0\xa0\xa0主演: '
+           '摩根·弗里曼 Morgan Freeman / 布...',
+ 'movie_name': '七宗罪',
+ 'ranking': '57',
+ 'score': '8.7',
+ 'score_num': '431800',
+ 'url': 'https://movie.douban.com/subject/1292223/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '动物版《哈姆雷特》。',
+ 'daoyan': '\n'
+           '                            导演: Roger Allers / 罗伯·明可夫 Rob '
+           'Minkoff\xa0\xa0\xa0主演: 乔纳森·泰勒·托马...',
+ 'movie_name': '狮子王',
+ 'ranking': '58',
+ 'score': '8.9',
+ 'score_num': '278680',
+ 'url': 'https://movie.douban.com/subject/1301753/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '以戏谑来戏谑戏谑。',
+ 'daoyan': '\n'
+           '                            导演: 中岛哲也 Tetsuya Nakashima\xa0\xa0\xa0'
+           '主演: 中谷美纪 Miki Nakatani / 瑛太 E...',
+ 'movie_name': '被嫌弃的松子的一生',
+ 'ranking': '59',
+ 'score': '8.9',
+ 'score_num': '277996',
+ 'url': 'https://movie.douban.com/subject/1787291/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '孪生蝙蝠侠大战克隆金刚狼。',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托弗·诺兰 Christopher '
+           'Nolan\xa0\xa0\xa0主演: 克里斯蒂安·贝尔 Christ...',
+ 'movie_name': '致命魔术',
+ 'ranking': '60',
+ 'score': '8.8',
+ 'score_num': '338992',
+ 'url': 'https://movie.douban.com/subject/1780330/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '奔跑的孩子是天使。',
+ 'daoyan': '\n'
+           '                            导演: 马基德·马基迪 Majid Majidi\xa0\xa0\xa0'
+           '主演: Amir Farrokh Hashemian / 默罕...',
+ 'movie_name': '小鞋子',
+ 'ranking': '61',
+ 'score': '9.2',
+ 'score_num': '134823',
+ 'url': 'https://movie.douban.com/subject/1303021/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '史诗大片的典范。',
+ 'daoyan': '\n'
+           '                            导演: 梅尔·吉布森 Mel Gibson\xa0\xa0\xa0主演: '
+           '梅尔·吉布森 Mel Gibson / 苏菲·玛...',
+ 'movie_name': '勇敢的心',
+ 'ranking': '62',
+ 'score': '8.8',
+ 'score_num': '293156',
+ 'url': 'https://movie.douban.com/subject/1294639/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '浪漫忧郁的成人童话。',
+ 'daoyan': '\n'
+           '                            导演: Tim Burton\xa0\xa0\xa0主演: 约翰尼·德普 '
+           'Johnny Depp / 薇诺娜·瑞德 Winona ...',
+ 'movie_name': '剪刀手爱德华',
+ 'ranking': '63',
+ 'score': '8.7',
+ 'score_num': '478942',
+ 'url': 'https://movie.douban.com/subject/1292370/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '用音乐化解仇恨，让歌声串起美好。',
+ 'daoyan': '\n'
+           '                            导演: Robert Wise\xa0\xa0\xa0主演: 朱丽·安德鲁斯 '
+           'Julie Andrews / 克里斯托弗·普...',
+ 'movie_name': '音乐之声',
+ 'ranking': '64',
+ 'score': '8.9',
+ 'score_num': '229416',
+ 'url': 'https://movie.douban.com/subject/1294408/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '迪士尼给我们营造的乌托邦就是这样，永远善良勇敢，永远出乎意料。',
+ 'daoyan': '\n'
+           '                            导演: 拜伦·霍华德 Byron Howard / 瑞奇·摩尔 Rich '
+           'Moore\xa0\xa0\xa0主演: 金妮弗·...',
+ 'movie_name': '疯狂动物城',
+ 'ranking': '65',
+ 'score': '9.2',
+ 'score_num': '487279',
+ 'url': 'https://movie.douban.com/subject/25662329/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '故事的高级讲法。',
+ 'daoyan': '\n'
+           '                            导演: 昆汀·塔伦蒂诺 Quentin '
+           'Tarantino\xa0\xa0\xa0主演: 约翰·特拉沃尔塔 John Tra...',
+ 'movie_name': '低俗小说',
+ 'ranking': '66',
+ 'score': '8.7',
+ 'score_num': '329700',
+ 'url': 'https://movie.douban.com/subject/1291832/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '受过伤害的人总是笑得最开心，因为他们不愿意让身边的人承受一样的痛苦。',
+ 'daoyan': '\n'
+           '                            导演: 李濬益 Jun-ik Lee\xa0\xa0\xa0主演: 薛景求 '
+           'Kyung-gu Sol / 严志媛 Ji-won Uhm ...',
+ 'movie_name': '素媛',
+ 'ranking': '67',
+ 'score': '9.1',
+ 'score_num': '172907',
+ 'url': 'https://movie.douban.com/subject/21937452/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '在时间之河里感受溺水之苦。',
+ 'daoyan': '\n'
+           '                            导演: 大卫·芬奇 David Fincher\xa0\xa0\xa0主演: '
+           '凯特·布兰切特 Cate Blanchett / ...',
+ 'movie_name': '本杰明·巴顿奇事',
+ 'ranking': '68',
+ 'score': '8.7',
+ 'score_num': '388306',
+ 'url': 'https://movie.douban.com/subject/1485260/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '死可能是一道门，逝去并不是终结，而是超越，走向下一程。',
+ 'daoyan': '\n'
+           '                            导演: 泷田洋二郎 Yôjirô Takita\xa0\xa0\xa0主演: '
+           '本木雅弘 Masahiro Motoki / ...',
+ 'movie_name': '入殓师',
+ 'ranking': '69',
+ 'score': '8.8',
+ 'score_num': '315687',
+ 'url': 'https://movie.douban.com/subject/2149806/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '安东尼·霍普金斯的顶级表演。',
+ 'daoyan': '\n'
+           '                            导演: 乔纳森·戴米 Jonathan Demme\xa0\xa0\xa0'
+           '主演: 朱迪·福斯特 Jodie Foster / 安...',
+ 'movie_name': '沉默的羔羊',
+ 'ranking': '70',
+ 'score': '8.7',
+ 'score_num': '348300',
+ 'url': 'https://movie.douban.com/subject/1293544/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '视觉革命。',
+ 'daoyan': '\n'
+           '                            导演: 安迪·沃卓斯基 Andy Wachowski / 拉娜·沃卓斯基 '
+           'Lana Wachowski\xa0\xa0\xa0主...',
+ 'movie_name': '黑客帝国',
+ 'ranking': '71',
+ 'score': '8.8',
+ 'score_num': '276213',
+ 'url': 'https://movie.douban.com/subject/1291843/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '美利坚精神输出大片No1.',
+ 'daoyan': '\n'
+           '                            导演: 史蒂文·斯皮尔伯格 Steven '
+           'Spielberg\xa0\xa0\xa0主演: 汤姆·汉克斯 Tom Hanks...',
+ 'movie_name': '拯救大兵瑞恩',
+ 'ranking': '72',
+ 'score': '8.8',
+ 'score_num': '233260',
+ 'url': 'https://movie.douban.com/subject/1292849/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '人的命运被自己瞬间的抉择改变。',
+ 'daoyan': '\n'
+           '                            导演: 埃里克·布雷斯 Eric Bress / J·麦基·格鲁伯 J. '
+           'Mackye Gruber\xa0\xa0\xa0主...',
+ 'movie_name': '蝴蝶效应',
+ 'ranking': '73',
+ 'score': '8.7',
+ 'score_num': '376013',
+ 'url': 'https://movie.douban.com/subject/1292343/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '美丽无罪。',
+ 'daoyan': '\n'
+           '                            导演: 朱塞佩·托纳多雷 Giuseppe '
+           'Tornatore\xa0\xa0\xa0主演: 莫妮卡·贝鲁奇 Monica ...',
+ 'movie_name': '西西里的美丽传说',
+ 'ranking': '74',
+ 'score': '8.7',
+ 'score_num': '340833',
+ 'url': 'https://movie.douban.com/subject/1292402/'}
+2017-09-17 16:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=50&filter=>
+{'bieming': '你是我最好的朋友，你是我唯一的朋友 。',
+ 'daoyan': '\n'
+           '                            导演: Adam Elliot\xa0\xa0\xa0主演: 托妮·科莱特 '
+           'Toni Collette / 菲利普·塞默·霍...',
+ 'movie_name': '玛丽和马克思',
+ 'ranking': '75',
+ 'score': '8.9',
+ 'score_num': '230329',
+ 'url': 'https://movie.douban.com/subject/3072124/'}
+2017-09-17 16:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=75&filter=> (referer: https://movie.douban.com/top250?start=50&filter=)
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '人生中应该拥有这样的一段豁然开朗。',
+ 'daoyan': '\n'
+           '                            导演: 格斯·范·桑特 Gus Van Sant\xa0\xa0\xa0'
+           '主演: 马特·达蒙 Matt Damon / 罗宾·...',
+ 'movie_name': '心灵捕手',
+ 'ranking': '76',
+ 'score': '8.7',
+ 'score_num': '265615',
+ 'url': 'https://movie.douban.com/subject/1292656/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '爱情纠缠，男女一致。',
+ 'daoyan': '\n'
+           '                            导演: 王家卫 Kar Wai Wong\xa0\xa0\xa0主演: '
+           '张国荣 Leslie Cheung / 梁朝伟 Tony Leu...',
+ 'movie_name': '春光乍泄',
+ 'ranking': '77',
+ 'score': '8.8',
+ 'score_num': '240567',
+ 'url': 'https://movie.douban.com/subject/1292679/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '人与自然的战争史诗。',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '松田洋治 Yôji Matsuda / 石田百合...',
+ 'movie_name': '幽灵公主',
+ 'ranking': '78',
+ 'score': '8.8',
+ 'score_num': '230628',
+ 'url': 'https://movie.douban.com/subject/1297359/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '你给我翻译翻译，神马叫做TMD的惊喜。',
+ 'daoyan': '\n'
+           '                            导演: 姜文 Wen Jiang\xa0\xa0\xa0主演: 姜文 Wen '
+           'Jiang / 葛优 You Ge / 周润发 Yun-F...',
+ 'movie_name': '让子弹飞',
+ 'ranking': '79',
+ 'score': '8.7',
+ 'score_num': '612255',
+ 'url': 'https://movie.douban.com/subject/3742360/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '深入内心的恐怖，出人意料的结局。',
+ 'daoyan': '\n'
+           '                            导演: M·奈特·沙马兰 M. Night '
+           'Shyamalan\xa0\xa0\xa0主演: 布鲁斯·威利斯 Bruce Wi...',
+ 'movie_name': '第六感',
+ 'ranking': '80',
+ 'score': '8.8',
+ 'score_num': '230569',
+ 'url': 'https://movie.douban.com/subject/1297630/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '一场华丽的意淫。',
+ 'daoyan': '\n'
+           '                            导演: 姜文 Wen Jiang\xa0\xa0\xa0主演: 夏雨 Yu '
+           'Xia / 宁静 Jing Ning / 陶虹 Hong Tao',
+ 'movie_name': '阳光灿烂的日子',
+ 'ranking': '81',
+ 'score': '8.7',
+ 'score_num': '265232',
+ 'url': 'https://movie.douban.com/subject/1291875/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '经典之作，历久弥新。',
+ 'daoyan': '\n'
+           '                            导演: 万籁鸣 Laiming Wan / 唐澄 Cheng  '
+           'Tang\xa0\xa0\xa0主演: 邱岳峰 Yuefeng Qiu /...',
+ 'movie_name': '大闹天宫',
+ 'ranking': '82',
+ 'score': '9.2',
+ 'score_num': '95661',
+ 'url': 'https://movie.douban.com/subject/1418019/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '抱着梦想而活着的人是幸福的，怀抱梦想而死去的人是不朽的。',
+ 'daoyan': '\n'
+           '                            导演: 蒂姆·波顿 Tim Burton\xa0\xa0\xa0主演: '
+           '伊万·麦克格雷格 Ewan McGregor / 阿...',
+ 'movie_name': '大鱼',
+ 'ranking': '83',
+ 'score': '8.7',
+ 'score_num': '247612',
+ 'url': 'https://movie.douban.com/subject/1291545/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '寂寞没有期限。',
+ 'daoyan': '\n'
+           '                            导演: 王家卫 Kar Wai Wong\xa0\xa0\xa0主演: '
+           '林青霞 Brigitte Lin / 金城武 Takeshi K...',
+ 'movie_name': '重庆森林',
+ 'ranking': '84',
+ 'score': '8.6',
+ 'score_num': '322323',
+ 'url': 'https://movie.douban.com/subject/1291999/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '百看不厌。 ',
+ 'daoyan': '\n'
+           '                            导演: 刘镇伟 Jeffrey Lau\xa0\xa0\xa0主演: 梁朝伟 '
+           'Tony Leung Chiu Wai / 林青霞 Bri...',
+ 'movie_name': '射雕英雄传之东成西就',
+ 'ranking': '85',
+ 'score': '8.7',
+ 'score_num': '270332',
+ 'url': 'https://movie.douban.com/subject/1316510/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '昔日翩翩少年，今日大腹便便。',
+ 'daoyan': '\n'
+           '                            导演: Martin Scorsese\xa0\xa0\xa0主演: '
+           '莱昂纳多·迪卡普里奥 Leonardo DiCaprio / ...',
+ 'movie_name': '禁闭岛',
+ 'ranking': '86',
+ 'score': '8.6',
+ 'score_num': '351020',
+ 'url': 'https://movie.douban.com/subject/2334904/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '相逢只要一瞬间，等待却像是一辈子。',
+ 'daoyan': '\n'
+           '                            导演: 陈可辛 Peter Chan\xa0\xa0\xa0主演: 黎明 '
+           'Leon Lai / 张曼玉 Maggie Cheung / ...',
+ 'movie_name': '甜蜜蜜',
+ 'ranking': '87',
+ 'score': '8.7',
+ 'score_num': '228290',
+ 'url': 'https://movie.douban.com/subject/1305164/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '被上帝抛弃了的上帝之城。',
+ 'daoyan': '\n'
+           '                            导演: Kátia Lund / Fernando '
+           'Meirelles\xa0\xa0\xa0主演: Alexandre Rodrigues / Lea...',
+ 'movie_name': '上帝之城',
+ 'ranking': '88',
+ 'score': '8.9',
+ 'score_num': '155613',
+ 'url': 'https://movie.douban.com/subject/1292208/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '再多各自牛逼的时光，也比不上一起傻逼的岁月。 ',
+ 'daoyan': '\n'
+           '                            导演: 姜炯哲 Hyeong-Cheol Kang\xa0\xa0\xa0'
+           '主演: 沈恩京 Eun-kyung Shim / 闵孝琳 Hy...',
+ 'movie_name': '阳光姐妹淘',
+ 'ranking': '89',
+ 'score': '8.8',
+ 'score_num': '262855',
+ 'url': 'https://movie.douban.com/subject/4917726/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '最不可能的那个人永远是最可能的。',
+ 'daoyan': '\n'
+           '                            导演: James Mangold\xa0\xa0\xa0主演: John '
+           'Cusack / Ray Liotta / Amanda Peet',
+ 'movie_name': '致命ID',
+ 'ranking': '90',
+ 'score': '8.6',
+ 'score_num': '311104',
+ 'url': 'https://movie.douban.com/subject/1297192/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '我们都曾经是一一。',
+ 'daoyan': '\n'
+           '                            导演: 杨德昌 Edward Yang\xa0\xa0\xa0主演: 吴念真 '
+           '/ 李凯莉 Kelly Lee / 金燕玲 Elai...',
+ 'movie_name': '一一',
+ 'ranking': '91',
+ 'score': '8.9',
+ 'score_num': '152188',
+ 'url': 'https://movie.douban.com/subject/1292434/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '没有一人完全善，也没有一人完全恶。',
+ 'daoyan': '\n'
+           '                            导演: 中岛哲也 Tetsuya Nakashima\xa0\xa0\xa0'
+           '主演: 松隆子 Takako Matsu / 冈田将生 ...',
+ 'movie_name': '告白',
+ 'ranking': '92',
+ 'score': '8.7',
+ 'score_num': '334413',
+ 'url': 'https://movie.douban.com/subject/4268598/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '人言可畏。',
+ 'daoyan': '\n'
+           '                            导演: 托马斯·温特伯格 Thomas '
+           'Vinterberg\xa0\xa0\xa0主演: 麦斯·米科尔森 Mads Mik...',
+ 'movie_name': '狩猎',
+ 'ranking': '93',
+ 'score': '9.0',
+ 'score_num': '122767',
+ 'url': 'https://movie.douban.com/subject/6985810/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '小清新的故事里注入了大历史的情怀。',
+ 'daoyan': '\n'
+           '                            导演: 韦斯·安德森 Wes Anderson\xa0\xa0\xa0主演: '
+           '拉尔夫·费因斯 Ralph Fiennes / ...',
+ 'movie_name': '布达佩斯大饭店',
+ 'ranking': '94',
+ 'score': '8.7',
+ 'score_num': '299545',
+ 'url': 'https://movie.douban.com/subject/11525673/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '约翰尼·德普的独角戏。',
+ 'daoyan': '\n'
+           '                            导演: 戈尔·维宾斯基 Gore Verbinski\xa0\xa0\xa0'
+           '主演: 约翰尼·德普 Johnny Depp / ...',
+ 'movie_name': '加勒比海盗',
+ 'ranking': '95',
+ 'score': '8.6',
+ 'score_num': '334869',
+ 'url': 'https://movie.douban.com/subject/1298070/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '“不要跟我比惨，我比你更惨”再适合这部电影不过了。',
+ 'daoyan': '\n'
+           '                            导演: 贝纳尔多·贝托鲁奇 Bernardo '
+           'Bertolucci\xa0\xa0\xa0主演: 尊龙 John Lone / 陈...',
+ 'movie_name': '末代皇帝',
+ 'ranking': '96',
+ 'score': '8.9',
+ 'score_num': '158547',
+ 'url': 'https://movie.douban.com/subject/1293172/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '每个人心中都有一座断背山。',
+ 'daoyan': '\n'
+           '                            导演: 李安 Ang Lee\xa0\xa0\xa0主演: 希斯·莱杰 '
+           'Heath Ledger / 杰克·吉伦哈尔 Jake...',
+ 'movie_name': '断背山',
+ 'ranking': '97',
+ 'score': '8.6',
+ 'score_num': '311199',
+ 'url': 'https://movie.douban.com/subject/1418834/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '缘分是个连绵词，最美不过一瞬。',
+ 'daoyan': '\n'
+           '                            导演: 理查德·林克莱特 Richard '
+           'Linklater\xa0\xa0\xa0主演: 伊桑·霍克 Ethan Hawke ...',
+ 'movie_name': '爱在黎明破晓前',
+ 'ranking': '98',
+ 'score': '8.7',
+ 'score_num': '214493',
+ 'url': 'https://movie.douban.com/subject/1296339/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '绝对意义上的美轮美奂。',
+ 'daoyan': '\n'
+           '                            导演: 詹姆斯·卡梅隆 James Cameron\xa0\xa0\xa0'
+           '主演: 萨姆·沃辛顿 Sam Worthington ...',
+ 'movie_name': '阿凡达',
+ 'ranking': '99',
+ 'score': '8.6',
+ 'score_num': '517451',
+ 'url': 'https://movie.douban.com/subject/1652587/'}
+2017-09-17 16:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=75&filter=>
+{'bieming': '大时代中的人生，小人物的悲喜。',
+ 'daoyan': '\n'
+           '                            导演: 查理·卓别林 Charles Chaplin\xa0\xa0\xa0'
+           '主演: 查理·卓别林 Charles Chaplin ...',
+ 'movie_name': '摩登时代',
+ 'ranking': '100',
+ 'score': '9.2',
+ 'score_num': '85261',
+ 'url': 'https://movie.douban.com/subject/1294371/'}
+2017-09-17 16:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=100&filter=> (referer: https://movie.douban.com/top250?start=75&filter=)
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '骗子大师和执著警探的你追我跑故事。 ',
+ 'daoyan': '\n'
+           '                            导演: 史蒂文·斯皮尔伯格 Steven '
+           'Spielberg\xa0\xa0\xa0主演: 莱昂纳多·迪卡普里奥 L...',
+ 'movie_name': '猫鼠游戏',
+ 'ranking': '101',
+ 'score': '8.7',
+ 'score_num': '215212',
+ 'url': 'https://movie.douban.com/subject/1305487/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '童话世界的开端。',
+ 'daoyan': '\n'
+           '                            导演: Chris Columbus\xa0\xa0\xa0主演: '
+           'Daniel Radcliffe / Emma Watson / Rupert Grint',
+ 'movie_name': '哈利·波特与魔法石',
+ 'ranking': '102',
+ 'score': '8.7',
+ 'score_num': '244217',
+ 'url': 'https://movie.douban.com/subject/1295038/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '动画片的圣经。',
+ 'daoyan': '\n'
+           '                            导演: 宫崎骏 Hayao Miyazaki\xa0\xa0\xa0主演: '
+           '岛本须美 Sumi Shimamoto / 松田洋治 Y...',
+ 'movie_name': '风之谷',
+ 'ranking': '103',
+ 'score': '8.8',
+ 'score_num': '171909',
+ 'url': 'https://movie.douban.com/subject/1291585/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '九年后的重逢是世俗和责任的交叠，没了悸动和青涩，沧桑而温暖。',
+ 'daoyan': '\n'
+           '                            导演: 理查德·林克莱特 Richard '
+           'Linklater\xa0\xa0\xa0主演: 伊桑·霍克 Ethan Hawke ...',
+ 'movie_name': '爱在日落黄昏时',
+ 'ranking': '104',
+ 'score': '8.7',
+ 'score_num': '193738',
+ 'url': 'https://movie.douban.com/subject/1291990/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '少女情怀总是诗。',
+ 'daoyan': '\n'
+           '                            导演: 近藤喜文 Yoshifumi Kondo\xa0\xa0\xa0'
+           '主演: 本名阳子 Youko Honna / 小林桂树 K...',
+ 'movie_name': '侧耳倾听',
+ 'ranking': '105',
+ 'score': '8.8',
+ 'score_num': '163374',
+ 'url': 'https://movie.douban.com/subject/1297052/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '幸福是生生不息，却难以触及的远。 ',
+ 'daoyan': '\n'
+           '                            导演: 高畑勋 Isao Takahata\xa0\xa0\xa0主演: '
+           '辰己努 / 白石绫乃 / 志乃原良子',
+ 'movie_name': '萤火虫之墓',
+ 'ranking': '106',
+ 'score': '8.7',
+ 'score_num': '199125',
+ 'url': 'https://movie.douban.com/subject/1293318/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '尽管有些不切实际的幻想，这部电影依旧是一部感人肺腑的佳作。',
+ 'daoyan': '\n'
+           '                            导演: 马克·赫门 Mark Herman\xa0\xa0\xa0主演: '
+           '阿沙·巴特菲尔德 Asa Butterfield / ...',
+ 'movie_name': '穿条纹睡衣的男孩',
+ 'ranking': '107',
+ 'score': '8.9',
+ 'score_num': '136993',
+ 'url': 'https://movie.douban.com/subject/3008247/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '和谐的生活离不开摸头与被摸头。',
+ 'daoyan': '\n'
+           '                            导演: 迪恩·德布洛斯 Dean DeBlois / 克里斯·桑德斯 '
+           'Chris Sanders\xa0\xa0\xa0主演:...',
+ 'movie_name': '驯龙高手',
+ 'ranking': '108',
+ 'score': '8.7',
+ 'score_num': '276952',
+ 'url': 'https://movie.douban.com/subject/2353023/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '穷尽一生，我们要学会的，不过是彼此拥抱。',
+ 'daoyan': '\n'
+           '                            导演: 托尼·凯耶 Tony Kaye\xa0\xa0\xa0主演: '
+           '艾德里安·布洛迪 Adrien Brody / 马西...',
+ 'movie_name': '超脱',
+ 'ranking': '109',
+ 'score': '8.8',
+ 'score_num': '167481',
+ 'url': 'https://movie.douban.com/subject/5322596/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '年度最佳date movie。',
+ 'daoyan': '\n'
+           '                            导演: 大卫·芬奇 David Fincher\xa0\xa0\xa0主演: '
+           '本·阿弗莱克 Ben Affleck / 罗莎蒙...',
+ 'movie_name': '消失的爱人',
+ 'ranking': '110',
+ 'score': '8.7',
+ 'score_num': '340844',
+ 'url': 'https://movie.douban.com/subject/21318488/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '有时候幸福需要等一等。 ',
+ 'daoyan': '\n'
+           '                            导演: 史蒂文·斯皮尔伯格 Steven '
+           'Spielberg\xa0\xa0\xa0主演: 汤姆·汉克斯 Tom Hanks...',
+ 'movie_name': '幸福终点站',
+ 'ranking': '111',
+ 'score': '8.6',
+ 'score_num': '219960',
+ 'url': 'https://movie.douban.com/subject/1292274/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '大海啊，不全是水。',
+ 'daoyan': '\n'
+           '                            导演: 雅克·贝汉 Jacques Perrin / 雅克·克鲁奥德 '
+           'Jacques Cluzaud\xa0\xa0\xa0主演:...',
+ 'movie_name': '海洋',
+ 'ranking': '112',
+ 'score': '9.0',
+ 'score_num': '97468',
+ 'url': 'https://movie.douban.com/subject/3443389/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '从没见过那么流氓的温柔，从没见过那么温柔的流氓。',
+ 'daoyan': '\n'
+           '                            导演: 北野武 Takeshi Kitano\xa0\xa0\xa0主演: '
+           '北野武 Takeshi Kitano / 关口雄介 Yus...',
+ 'movie_name': '菊次郎的夏天',
+ 'ranking': '113',
+ 'score': '8.7',
+ 'score_num': '175462',
+ 'url': 'https://movie.douban.com/subject/1293359/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '两张绝世的脸。 ',
+ 'daoyan': '\n'
+           '                            导演: 程小东 Siu-Tung Ching\xa0\xa0\xa0主演: '
+           '张国荣 Leslie Cheung / 王祖贤 Joey W...',
+ 'movie_name': '倩女幽魂',
+ 'ranking': '114',
+ 'score': '8.6',
+ 'score_num': '240494',
+ 'url': 'https://movie.douban.com/subject/1297447/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '恐怖分子的“秋菊打官司”。',
+ 'daoyan': '\n'
+           '                            导演: 金秉祐 Byeong-woo Kim\xa0\xa0\xa0主演: '
+           '河正宇 Jung-woo Ha / 李璟荣 Kyeong-y...',
+ 'movie_name': '恐怖直播',
+ 'ranking': '115',
+ 'score': '8.7',
+ 'score_num': '209011',
+ 'url': 'https://movie.douban.com/subject/21360417/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '时代悲歌。',
+ 'daoyan': '\n'
+           '                            导演: 黑泽明 Akira Kurosawa\xa0\xa0\xa0主演: '
+           '三船敏郎 Toshirô Mifune / 志村乔 ...',
+ 'movie_name': '七武士',
+ 'ranking': '116',
+ 'score': '9.2',
+ 'score_num': '74904',
+ 'url': 'https://movie.douban.com/subject/1295399/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': "Mr. I Don't Care其实也有Care的时候。",
+ 'daoyan': '\n'
+           '                            导演: 皮艾尔·柯芬 Pierre Coffin / 克里斯·雷纳德 '
+           'Chris Renaud\xa0\xa0\xa0主演: ...',
+ 'movie_name': '神偷奶爸',
+ 'ranking': '117',
+ 'score': '8.5',
+ 'score_num': '362689',
+ 'url': 'https://movie.douban.com/subject/3287562/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '岁月流逝，来日可追。',
+ 'daoyan': '\n'
+           '                            导演: 罗启锐 Alex Law\xa0\xa0\xa0主演: 吴君如 '
+           'Sandra Ng / 任达华 Simon Yam / 钟绍...',
+ 'movie_name': '岁月神偷',
+ 'ranking': '118',
+ 'score': '8.6',
+ 'score_num': '299942',
+ 'url': 'https://movie.douban.com/subject/3792799/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '真相就在眼前。',
+ 'daoyan': '\n'
+           '                            导演: 詹姆斯·温 James Wan\xa0\xa0\xa0主演: '
+           '雷·沃纳尔 Leigh Whannell / 加利·艾...',
+ 'movie_name': '电锯惊魂',
+ 'ranking': '119',
+ 'score': '8.7',
+ 'score_num': '193620',
+ 'url': 'https://movie.douban.com/subject/1417598/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '像吃了苏打饼一样干脆的电影。',
+ 'daoyan': '\n'
+           '                            导演: 保罗·格林格拉斯 Paul '
+           'Greengrass\xa0\xa0\xa0主演: 马特·达蒙 Matt Damon / ...',
+ 'movie_name': '谍影重重3',
+ 'ranking': '120',
+ 'score': '8.7',
+ 'score_num': '175727',
+ 'url': 'https://movie.douban.com/subject/1578507/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '曾经的那段美好会沉淀为一辈子的记忆。',
+ 'daoyan': '\n'
+           '                            导演: 米林宏昌 Hiromasa '
+           'Yonebayashi\xa0\xa0\xa0主演: 志田未来 Mirai Shida / 神木...',
+ 'movie_name': '借东西的小人阿莉埃蒂',
+ 'ranking': '121',
+ 'score': '8.7',
+ 'score_num': '210063',
+ 'url': 'https://movie.douban.com/subject/4202302/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '传奇，不是每个人都可以拥有。',
+ 'daoyan': '\n'
+           '                            导演: 爱德华·兹威克 Edward Zwick\xa0\xa0\xa0'
+           '主演: 安东尼·霍普金斯 Anthony Hopki...',
+ 'movie_name': '燃情岁月',
+ 'ranking': '122',
+ 'score': '8.8',
+ 'score_num': '145965',
+ 'url': 'https://movie.douban.com/subject/1295865/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '梦的勾结。',
+ 'daoyan': '\n'
+           '                            导演: 今敏 Satoshi Kon\xa0\xa0\xa0主演: 林原惠美 '
+           'Megumi Hayashibara / 古谷彻 T...',
+ 'movie_name': '红辣椒',
+ 'ranking': '123',
+ 'score': '8.8',
+ 'score_num': '125855',
+ 'url': 'https://movie.douban.com/subject/1865703/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '爱，是个动词。',
+ 'daoyan': '\n'
+           '                            导演: 理查德·柯蒂斯 Richard Curtis\xa0\xa0\xa0'
+           '主演: 休·格兰特 Hugh Grant / 柯林...',
+ 'movie_name': '真爱至上',
+ 'ranking': '124',
+ 'score': '8.5',
+ 'score_num': '300469',
+ 'url': 'https://movie.douban.com/subject/1292401/'}
+2017-09-17 16:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=100&filter=>
+{'bieming': '生活在自己的世界里，也可以让周围的人显得可笑和渺小。',
+ 'daoyan': '\n'
+           '                            导演: 巴瑞·莱文森 Barry Levinson\xa0\xa0\xa0'
+           '主演: 达斯汀·霍夫曼 Dustin Hoffman ...',
+ 'movie_name': '雨人',
+ 'ranking': '125',
+ 'score': '8.6',
+ 'score_num': '204762',
+ 'url': 'https://movie.douban.com/subject/1291870/'}
+2017-09-17 16:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250?start=125&filter=> (referer: https://movie.douban.com/top250?start=100&filter=)
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '上帝之城+猜火车+阿甘正传+开心辞典=山寨富翁',
+ 'daoyan': '\n'
+           '                            导演: 丹尼·鲍尔 Danny Boyle / 洛芙琳·坦丹 '
+           'Loveleen Tandan\xa0\xa0\xa0主演: 戴夫...',
+ 'movie_name': '贫民窟的百万富翁',
+ 'ranking': '126',
+ 'score': '8.5',
+ 'score_num': '387029',
+ 'url': 'https://movie.douban.com/subject/2209573/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '关于连环杀人悬案的集体回忆。',
+ 'daoyan': '\n'
+           '                            导演: 奉俊昊 Joon-ho Bong\xa0\xa0\xa0主演: '
+           '宋康昊 Kang-ho Song / 金相庆 Sang-kyun...',
+ 'movie_name': '杀人回忆',
+ 'ranking': '127',
+ 'score': '8.6',
+ 'score_num': '201991',
+ 'url': 'https://movie.douban.com/subject/1300299/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '电影诗。',
+ 'daoyan': '\n'
+           '                            导演: 王家卫 Kar Wai Wong\xa0\xa0\xa0主演: '
+           '张国荣 Leslie Cheung / 张曼玉 Maggie C...',
+ 'movie_name': '东邪西毒',
+ 'ranking': '128',
+ 'score': '8.6',
+ 'score_num': '242045',
+ 'url': 'https://movie.douban.com/subject/1292328/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '一个针管引发的血案。',
+ 'daoyan': '\n'
+           '                            导演: 克里斯托弗·诺兰 Christopher '
+           'Nolan\xa0\xa0\xa0主演: 盖·皮尔斯 Guy Pearce /...',
+ 'movie_name': '记忆碎片',
+ 'ranking': '129',
+ 'score': '8.5',
+ 'score_num': '270819',
+ 'url': 'https://movie.douban.com/subject/1304447/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '永远看不腻的喜剧。',
+ 'daoyan': '\n'
+           '                            导演: 杰拉尔·乌里 Gérard Oury\xa0\xa0\xa0主演: '
+           '路易·德·菲耐斯 Louis de Funès...',
+ 'movie_name': '虎口脱险',
+ 'ranking': '130',
+ 'score': '8.9',
+ 'score_num': '104361',
+ 'url': 'https://movie.douban.com/subject/1296909/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '老少皆宜，这就是好莱坞动画的魅力。',
+ 'daoyan': '\n'
+           '                            导演: 科克·德·米科 Kirk De Micco / 克里斯·桑德斯 '
+           'Chris Sanders\xa0\xa0\xa0主演...',
+ 'movie_name': '疯狂原始人',
+ 'ranking': '131',
+ 'score': '8.7',
+ 'score_num': '359805',
+ 'url': 'https://movie.douban.com/subject/1907966/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '不要给它起名字，起了名字就有感情了。',
+ 'daoyan': '\n'
+           '                            导演: 彼特·道格特 Pete Docter / 大卫·斯沃曼 David '
+           'Silverman\xa0\xa0\xa0主演: 约...',
+ 'movie_name': '怪兽电力公司',
+ 'ranking': '132',
+ 'score': '8.6',
+ 'score_num': '230822',
+ 'url': 'https://movie.douban.com/subject/1291579/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '当这个世界闭上双眼，他却敞开了怀抱。',
+ 'daoyan': '\n'
+           '                            导演: 特瑞·乔治 Terry George\xa0\xa0\xa0主演: '
+           '唐·钱德尔 Don Cheadle / 苏菲·奥...',
+ 'movie_name': '卢旺达饭店',
+ 'ranking': '133',
+ 'score': '8.8',
+ 'score_num': '115142',
+ 'url': 'https://movie.douban.com/subject/1291822/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '中国家庭的喜怒哀乐忍。',
+ 'daoyan': '\n'
+           '                            导演: 李安\xa0\xa0\xa0主演: 赵文瑄 / 归亚蕾 / 金素梅',
+ 'movie_name': '喜宴',
+ 'ranking': '134',
+ 'score': '8.8',
+ 'score_num': '133481',
+ 'url': 'https://movie.douban.com/subject/1303037/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '黑暗之美。',
+ 'daoyan': '\n'
+           '                            导演: 达伦·阿罗诺夫斯基 Darren '
+           'Aronofsky\xa0\xa0\xa0主演: 娜塔丽·波曼 Natalie P...',
+ 'movie_name': '黑天鹅',
+ 'ranking': '135',
+ 'score': '8.5',
+ 'score_num': '404665',
+ 'url': 'https://movie.douban.com/subject/1978709/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '那些静得只能听见呼吸的日子里，你明白孤独即生活。',
+ 'daoyan': '\n'
+           '                            导演: 森淳一 Junichi Mori\xa0\xa0\xa0主演: '
+           '桥本爱 Ai Hashimoto / 三浦贵大 Takahir...',
+ 'movie_name': '小森林 夏秋篇',
+ 'ranking': '136',
+ 'score': '8.9',
+ 'score_num': '121060',
+ 'url': 'https://movie.douban.com/subject/25814705/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '我是一个演员。',
+ 'daoyan': '\n'
+           '                            导演: 周星驰 Stephen Chow / 李力持 Lik-Chi '
+           'Lee\xa0\xa0\xa0主演: 周星驰 Stephen Ch...',
+ 'movie_name': '喜剧之王',
+ 'ranking': '137',
+ 'score': '8.5',
+ 'score_num': '297561',
+ 'url': 'https://movie.douban.com/subject/1302425/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '中国式内在的美国电影。',
+ 'daoyan': '\n'
+           '                            导演: Mervyn LeRoy\xa0\xa0\xa0主演: Vivien '
+           'Leigh / Robert Taylor / Lucile Watson',
+ 'movie_name': '魂断蓝桥',
+ 'ranking': '138',
+ 'score': '8.8',
+ 'score_num': '125994',
+ 'url': 'https://movie.douban.com/subject/1293964/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '爱上未来的你。 ',
+ 'daoyan': '\n'
+           '                            导演: 细田守 Mamoru Hosoda\xa0\xa0\xa0主演: '
+           '仲里依纱 Riisa Naka / 石田卓也 Takuya...',
+ 'movie_name': '穿越时空的少女',
+ 'ranking': '139',
+ 'score': '8.6',
+ 'score_num': '180007',
+ 'url': 'https://movie.douban.com/subject/1937946/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '不可猜的青春迷笛。 ',
+ 'daoyan': '\n'
+           '                            导演: 丹尼·博伊尔 Danny Boyle\xa0\xa0\xa0主演: '
+           '伊万·麦克格雷格 Ewan McGregor / ...',
+ 'movie_name': '猜火车',
+ 'ranking': '140',
+ 'score': '8.5',
+ 'score_num': '242403',
+ 'url': 'https://movie.douban.com/subject/1292528/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '英雄泪短，兄弟情长。 ',
+ 'daoyan': '\n'
+           '                            导演: 吴宇森 John Woo\xa0\xa0\xa0主演: 周润发 '
+           'Yun-Fat Chow / 狄龙 Lung Ti / 张国...',
+ 'movie_name': '英雄本色',
+ 'ranking': '141',
+ 'score': '8.7',
+ 'score_num': '143958',
+ 'url': 'https://movie.douban.com/subject/1297574/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '爱情没有那么多借口，如果不能圆满，只能说明爱的不够。 ',
+ 'daoyan': '\n'
+           '                            导演: 尼克·卡索维茨 Nick Cassavetes\xa0\xa0\xa0'
+           '主演: 瑞恩·高斯林 Ryan Gosling /...',
+ 'movie_name': '恋恋笔记本',
+ 'ranking': '142',
+ 'score': '8.5',
+ 'score_num': '271415',
+ 'url': 'https://movie.douban.com/subject/1309163/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '骨灰级歌舞片。',
+ 'daoyan': '\n'
+           '                            导演: Stanley Donen / Gene '
+           "Kelly\xa0\xa0\xa0主演: Gene Kelly / Donald O'Connor / ...",
+ 'movie_name': '雨中曲',
+ 'ranking': '143',
+ 'score': '8.9',
+ 'score_num': '90441',
+ 'url': 'https://movie.douban.com/subject/1293460/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '爱是摈弃傲慢与偏见之后的曙光。',
+ 'daoyan': '\n'
+           '                            导演: 乔·怀特 Joe Wright\xa0\xa0\xa0主演: '
+           '凯拉·奈特莉 Keira Knightley / 马修·...',
+ 'movie_name': '傲慢与偏见',
+ 'ranking': '144',
+ 'score': '8.4',
+ 'score_num': '290478',
+ 'url': 'https://movie.douban.com/subject/1418200/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '任何信念的力量，都无法改变命运。',
+ 'daoyan': '\n'
+           '                            导演: 弗朗西斯·福特·科波拉 Francis Ford '
+           'Coppola\xa0\xa0\xa0主演: 阿尔·帕西诺 A...',
+ 'movie_name': '教父3',
+ 'ranking': '145',
+ 'score': '8.7',
+ 'score_num': '124692',
+ 'url': 'https://movie.douban.com/subject/1294240/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '坏人的好总是比好人的好来得更感人。',
+ 'daoyan': '\n'
+           '                            导演: 克林特·伊斯特伍德 Clint '
+           'Eastwood\xa0\xa0\xa0主演: 凯文·科斯特纳 Kevin Cos...',
+ 'movie_name': '完美的世界',
+ 'ranking': '146',
+ 'score': '9.0',
+ 'score_num': '76190',
+ 'url': 'https://movie.douban.com/subject/1300992/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '香港浪漫主义警匪动作片的巅峰之作。',
+ 'daoyan': '\n'
+           '                            导演: 吴宇森 John Woo\xa0\xa0\xa0主演: 周润发 '
+           'Yun-Fat Chow / 张国荣 Leslie Cheung...',
+ 'movie_name': '纵横四海',
+ 'ranking': '147',
+ 'score': '8.7',
+ 'score_num': '137558',
+ 'url': 'https://movie.douban.com/subject/1295409/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '触不到的恋人。',
+ 'daoyan': '\n'
+           '                            导演: 大森贵弘 Takahiro Omori\xa0\xa0\xa0主演: '
+           '佐仓绫音 Ayane Sakura / 内山昂辉 K...',
+ 'movie_name': '萤火之森',
+ 'ranking': '148',
+ 'score': '8.7',
+ 'score_num': '149423',
+ 'url': 'https://movie.douban.com/subject/5989818/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250?start=125&filter=>
+{'bieming': '跨度十五年的欢乐与泪水。',
+ 'daoyan': '\n'
+           '                            导演: 李·昂克里奇 Lee Unkrich\xa0\xa0\xa0主演: '
+           '汤姆·汉克斯 Tom Hanks / 蒂姆·艾...',
+ 'movie_name': '玩具总动员3',
+ 'ranking': '149',
+ 'score': '8.7',
+ 'score_num': '186322',
+ 'url': 'https://movie.douban.com/subject/1858711/'}
+2017-09-17 16:10:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://movie.douban.com/top250?start=125&filter=> (referer: https://movie.douban.com/top250?start=100&filter=)
+Traceback (most recent call last):
+  File "d:\program files (x86)\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\program files (x86)\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\program files (x86)\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\program files (x86)\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\program files (x86)\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Administrator\Desktop\baidu\baidu\spiders\xiaohuar_spider.py", line 23, in parse
+    item['bieming']=movie.xpath('.//div[@class="bd"]/p[@class="quote"]/span/text()').extract()[0]
+IndexError: list index out of range
+2017-09-17 16:10:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-09-17 16:10:58 [scrapy.extensions.feedexport] INFO: Stored csv feed (149 items) in: douban_movie_top250.csv
+2017-09-17 16:10:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2521,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 76474,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 6,
+ 'downloader/response_status_count/403': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 9, 17, 8, 10, 58, 217705),
+ 'item_scraped_count': 149,
+ 'log_count/DEBUG': 157,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 5,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2017, 9, 17, 8, 10, 53, 622443)}
+2017-09-17 16:10:58 [scrapy.core.engine] INFO: Spider closed (finished)
