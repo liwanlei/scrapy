@@ -2,7 +2,7 @@
 # @Date    : 2017-09-17 10:43:39
 # @Author  : leizi
 import scrapy
-from baidu.items import BaiduItem
+from douban.items import BaiduItem
 from scrapy import Request
 import re
 class XiaoHuarSpider(scrapy.Spider):
