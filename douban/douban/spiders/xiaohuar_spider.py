@@ -25,6 +25,5 @@ class XiaoHuarSpider(scrapy.Spider):
 			yield item
 		next_url=response.xpath('//span[@class="next"]/a/@href').extract()
 		if next_url:
-			print(next_url)
 			next_url='https://movie.douban.com/top250'+next_url[0]
 			yield Request(next_url,headers=self.headers)
