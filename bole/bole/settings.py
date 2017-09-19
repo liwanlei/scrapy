@@ -46,9 +46,9 @@ COOKIES_ENABLED = False
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
+# SPIDER_MIDDLEWARES = {
 #    'bole.middlewares.BoleSpiderMiddleware': 543,
-#}
+# }
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
@@ -65,7 +65,7 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'bole.pipelines.BolePipeline': 300,
+   'bole.pipelines.hello': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

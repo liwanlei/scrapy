@@ -14,8 +14,3 @@ class BoleItem(scrapy.Item):
     #date=scrapy.Field()
     lei=scrapy.Field()
     title_url=scrapy.Field()
-    #title_text=scrapy.Field()
-    #dianzan=scrapy.Field()
-    #pinglun=scrapy.Field()
-    #shoucang=scrapy.Field()
-    pass
